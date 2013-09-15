@@ -7,14 +7,9 @@ var pracMan = {
 	"debug":  true,
 	"traceLog": "",
 	"logCalls": 0,
-	"panelTabsDef": new Array( 		{id: "editChar", label: "Character"},
-									{id: "editAttribs", label: "Attributes"},
-									{id: "editSkills", label: "Skills"},
-									{id: "editMasteries", label: "Masteries"},
-									{id: "editMagic", label: "Magic"},
-									{id: "editTraitHCs", label: "Traits/HCs"},
-									{id: "editWeapons", label: "Weapons"},
-									{id: "editArmor", label: "Armor"}
+	"panelTabsDef": new Array( 		{id: "editSongs", label: "Repertoire"},
+									{id: "editExercises", label: "Excercises"},
+									{id: "editSessions", label:"Practice Sessions"}
 									),
 	"storageName": "pracMan"
 }; 
