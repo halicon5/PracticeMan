@@ -1,0 +1,44 @@
+Basic Ideas
+
+
+
+Manager
+	Instruments
+		- name
+	Repertoire
+		- name
+		- composer
+		- genre
+		- targetBPM
+	Exercises
+		- name
+		- composer
+		- targetBPM
+		- instrument
+	Scales
+		- key
+		- mode
+		- scalePattern
+	Sessions
+		- Date
+		- array of instances
+		- startTime
+		- endTime
+		- userRating
+	PracticeInstance
+		- taskType
+		- taskName
+		- instrument
+		- duration
+		- startTime
+		- endTime
+		- repetitions
+		- startBPM
+		- endBPM
+		- rating
+		- key
+		- scalePattern
+
+	Userdefined data:
+		Scales
+		Patterns

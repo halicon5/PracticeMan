@@ -14,6 +14,7 @@ var pracMan = {
 	"storageName": "pracMan"
 }; 
 
+	var increm = 0; // generic global incrementer used during definitions
 
 	pracMan.log = function(msg) {
 		this.logCalls++;
