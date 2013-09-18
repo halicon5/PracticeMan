@@ -5,26 +5,31 @@ Basic Ideas
 Manager
 	Instruments
 		- name
+		- notes
 	Repertoire
 		- name
 		- composer
 		- genre
 		- targetBPM
+		- notes
 	Exercises
 		- name
 		- composer
 		- targetBPM
 		- instrument
+		- notes
 	Scales
 		- key
 		- mode
 		- scalePattern
+		- notes
 	Sessions
 		- Date
 		- array of instances
 		- startTime
 		- endTime
 		- userRating
+		- notes
 	PracticeInstance
 		- taskType
 		- taskName
@@ -38,7 +43,11 @@ Manager
 		- rating
 		- key
 		- scalePattern
+		- notes
 
 	Userdefined data:
 		Scales
 		Patterns
+
+
+	Favorites
