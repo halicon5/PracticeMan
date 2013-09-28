@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Practice Manager</title>
+
+	<link href="pracMan.css" rel="stylesheet" type="text/css" />
+
+
+	
+	<script type="text/javascript" src="pracMan.js"></script>
+
+
+	<script type="text/javascript" src="pracManager/pracManagerDAT.js"></script>
+	<script type="text/javascript" src="pracManager/pracManagerSVC.js"></script>
+	<script type="text/javascript" src="pracManager/pracManagerUI.js"></script>
+
+	<script type="text/javascript" src="pracManDefs/scaleDefs.js"></script>
+
+	<script type="text/javascript" src="repertoire/repertoireDAT.js"></script>
+
+	<script type="text/javascript" src="sessions/sessionDAT.js"></script>
+
+	<script type="text/javascript" src="exercises/exerciseDAT.js"></script>
+
+	<script type="text/javascript" src="instruments/instrumentDAT.js"></script>
+
+
+</head>
+
+<body>
+
+
+		<div class='console'>
+			<form id="commandLine" name="commandLine" size="120" onSubmit="pracMan.eval(document.forms['commandLine'].elements['command'].value); updateDebugBox(); document.forms['commandLine'].elements['command'].value = ''; return false;">
+				<input class='console' size="80" name="command" /><input type="submit" value="run" />
+			</form>
+		</div>
+
+<div id="pracManDisplay"></div>
+
+
+<div class='console'><pre id="debug_feedback"></pre></div>
+
+<script type="text/javascript" src="execute.js"></script>
+
+
+
+</body>
+
+</html>
