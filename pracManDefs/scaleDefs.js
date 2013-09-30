@@ -1,7 +1,7 @@
 pracMan.scaleDefs = {};
 
 increm = 0;
-pracMan.scaleDefs.keys = array();
+pracMan.scaleDefs.keys = new Array();
 pracMan.scaleDefs.keys[increm++] = 'C';
 pracMan.scaleDefs.keys[increm++] = 'G';
 pracMan.scaleDefs.keys[increm++] = 'D';
@@ -16,7 +16,7 @@ pracMan.scaleDefs.keys[increm++] = 'A# / Bb';
 pracMan.scaleDefs.keys[increm++] = 'E# / F';
 
 increm = 0;
-pracMan.scaleDefs.modes = array();
+pracMan.scaleDefs.modes = new Array();
 pracMan.scaleDefs.modes[increm++] = 'Major';
 pracMan.scaleDefs.modes[increm++] = 'Minor (natural)';
 pracMan.scaleDefs.modes[increm++] = 'Minor (harmonic)';
@@ -25,10 +25,10 @@ pracMan.scaleDefs.modes[increm++] = 'Blues';
 pracMan.scaleDefs.modes[increm++] = 'Other';
 
 increm = 0;
-pracMan.scaleDefs.misc = array();
+pracMan.scaleDefs.misc = new Array();
 pracMan.scaleDefs.misc[increm++] = "Various";
 pracMan.scaleDefs.misc[increm++] = "Circle of Fifths";
 pracMan.scaleDefs.misc[increm++] = "Circle of Fourths";
 
 increm = 0;
-pracMan.scaleDefs.patterns = array();
+pracMan.scaleDefs.patterns = new Array();

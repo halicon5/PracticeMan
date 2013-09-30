@@ -71,8 +71,8 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 
 /************** HERE IS MY CSS **************/
 /* Structural CSS */
-#CM_TDsideMenus { width: 250; }
-#CM_TDcontent {width: 1000; }
+#pracMan_TDsideMenus { width: 250; }
+#pracMan_TDcontent {width: 1000; }
 
 
 #debug_feedback {background-color: black; clear: all; padding-top: 10px;}
@@ -85,7 +85,7 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 
 
 /* CSS for the tabs.  It is best not to fiddle with these */
-.CMTabSet li { /* do not change */
+.pracManTabSet li { /* do not change */
 	display: inline;
 	margin-right: 5px; /* set additional spacing between tabs as desired */
 	-moz-box-shadow: 5px 5px 3px #a64242;
@@ -96,12 +96,12 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 	-webkit-border-top-right-radius: 6px;
 }
 
-.CMTabSet li.CMNavTab  { /* settings for selected tab */
+.pracManTabSet li.pracManNavTab  { /* settings for selected tab */
 	border-bottom: 1px solid #fff;
 	background-color: #fff; 
 }
 
-.CMTabSet li.CMNavTab a {
+.pracManTabSet li.pracManNavTab a {
 	padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
 	border: 1px solid #6c6; /* set border COLOR as desired; usually matches border color specified in #tabnav */
 	color: #666; /* set unselected tab link color as desired */
@@ -116,7 +116,7 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 	background: -moz-linear-gradient(top,  #9c9,  #696); /* for firefox 3.6+ */
 }
 
-.CMTabSet li.activeTab a {
+.pracManTabSet li.activeTab a {
 	background-color: #cfc; /* set unselected tab background color as desired */
 	color: #020;
 	border: 1px solid #5b5;
@@ -126,7 +126,7 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 	background: -moz-linear-gradient(top,  #797,  #aca); /* for firefox 3.6+ */
 }
 
-.CMPanelSet {
+.pracManPanelSet {
 	position: relative;
 	z-index: 1;
 	border: 1px solid #5b5;
@@ -146,7 +146,7 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 
 }
 
-.CMpanel {
+.pracManpanel {
 	padding: 10px;
 	background-color: #cfc;
 	background: -webkit-gradient(linear, left top, left bottom, from(#aca), to(#cfc)); /* for webkit browsers */
@@ -158,7 +158,7 @@ input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="
 
 
 /* Left menu stuff */
-div.CMleftMenu { border: 1px solid #5b5;
+div.pracManleftMenu { border: 1px solid #5b5;
 				margin: 4px;
 				margin-right: 10px;
 				margin-bottom: 10px;
@@ -172,9 +172,9 @@ div.CMleftMenu { border: 1px solid #5b5;
 				background: -moz-linear-gradient(top,  #9b9,  #cfc); /* for firefox 3.6+ */
 				}
 
-.CMleftMenu li {margin:2px;	}
+.pracManleftMenu li {margin:2px;	}
 
-.CMleftMenu li.activeSelection { background-color: #e3ffe3;
+.pracManleftMenu li.activeSelection { background-color: #e3ffe3;
 									border: 1px solid #5B5;
 									margin: 2px;
 									-moz-border-radius: 5px;
@@ -185,7 +185,7 @@ div.CMleftMenu { border: 1px solid #5b5;
 
 
 /*  General editor stuff */
-.CMeditorGroup { background-color: #e3ffe3;
+.pracManeditorGroup { background-color: #e3ffe3;
 				-moz-border-radius: 5px;
 				-webkit-border-radius: 5px;
 				padding: 5px;
@@ -195,9 +195,9 @@ div.CMleftMenu { border: 1px solid #5b5;
 }
 
 
-.CMheader { font-weight: bold; }
+.pracManheader { font-weight: bold; }
 
-.CMmonospace { font-family: Monaco; white-space: pre; }
+.pracManmonospace { font-family: Monaco; white-space: pre; }
 
 
 
@@ -209,26 +209,26 @@ div.CMleftMenu { border: 1px solid #5b5;
 						margin-right: 5px;
 						}
 						
-.CMattributeSet			{display: table; width: 100%;}
-.CMattributeSetRow		{display: table-row; margin-bottom: 2px; }
-.CMattributeSetRow div	{display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
-.CMCOLattribName 		{display: table-cell; text-align: right; padding: 2px; border: 1px solid #7D7;}
-.CMCOLattribRank		{display: table-cell; text-align: center; padding: 2px;}
+.pracManattributeSet			{display: table; width: 100%;}
+.pracManattributeSetRow		{display: table-row; margin-bottom: 2px; }
+.pracManattributeSetRow div	{display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
+.pracManCOLattribName 		{display: table-cell; text-align: right; padding: 2px; border: 1px solid #7D7;}
+.pracManCOLattribRank		{display: table-cell; text-align: center; padding: 2px;}
 
 
 /* skill stuff */
-.CMskillListCol {display: inline-block; vertical-align: top;}
-.CMskillSet {display: table; width: 400px; font-size: .9em; background-color:#9a9;}
-.CMskillSetRow	{display: table-row; margin-bottom: 2px; }
-.CMheader.CMskillSetRow {background-color: #7A7;}
-.CMskillSetRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7; white-space: nowrap; vertical-align: middle; font-size: .9em}
-.CMCOLskillName 	{display: table-cell; width: 100px; text-align: right; padding: 2px; border: 1px solid #7D7;}
-.CMCOLskillRank		{display: table-cell; text-align: center; padding: 2px;}
+.pracManskillListCol {display: inline-block; vertical-align: top;}
+.pracManskillSet {display: table; width: 400px; font-size: .9em; background-color:#9a9;}
+.pracManskillSetRow	{display: table-row; margin-bottom: 2px; }
+.pracManheader.pracManskillSetRow {background-color: #7A7;}
+.pracManskillSetRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7; white-space: nowrap; vertical-align: middle; font-size: .9em}
+.pracManCOLskillName 	{display: table-cell; width: 100px; text-align: right; padding: 2px; border: 1px solid #7D7;}
+.pracManCOLskillRank		{display: table-cell; text-align: center; padding: 2px;}
 
-.CMCOLmasteryName	{display: table-cell; width: 200px; text-align: right; padding: 2px; border: 1px solid #7d7;}
+.pracManCOLmasteryName	{display: table-cell; width: 200px; text-align: right; padding: 2px; border: 1px solid #7d7;}
 
 
-div.CMdisciplineSpells {border: 1px solid #5b5;
+div.pracMandisciplineSpells {border: 1px solid #5b5;
 				margin: 4px;
 				margin-right: 10px;
 				margin-bottom: 10px;
@@ -239,7 +239,7 @@ div.CMdisciplineSpells {border: 1px solid #5b5;
 				background: -moz-linear-gradient(top,  #EEE,  #AAA); /* for firefox 3.6+ */
 				}
 
-.CMpopupOverlay {
+.pracManpopupOverlay {
 	z-index: 1;
 	position: fixed;
 	top: 0;
@@ -250,7 +250,7 @@ div.CMdisciplineSpells {border: 1px solid #5b5;
 	opacity: .8;
 }
 
-.CMxpDialogueBox {
+.pracManxpDialogueBox {
 	z-index: 2;
 	position: fixed;
 	top: 50px;
@@ -272,42 +272,42 @@ div.CMdisciplineSpells {border: 1px solid #5b5;
 	opacity: 1;
 }
 
-.CMxpDialogueBox div {
+.pracManxpDialogueBox div {
 	margin: 3px;
 }
 
-.CMcloseButton {
+.pracMancloseButton {
 	position: absolute;
 	top: 5px; right: 5px;
 }
 
-table.CMxpLog tbody tr td { border: 1px solid #7D7; text-align: center; padding: 2px; font-size: .9em;}
-table.CMxpLog thead tr td { font-weight: bold;  border: 1px solid #7D7; padding: 2px; background-color: #AAA; font-size: .9em; }
-div.CMxpLog {
+table.pracManxpLog tbody tr td { border: 1px solid #7D7; text-align: center; padding: 2px; font-size: .9em;}
+table.pracManxpLog thead tr td { font-weight: bold;  border: 1px solid #7D7; padding: 2px; background-color: #AAA; font-size: .9em; }
+div.pracManxpLog {
 	width: 100%;
 	height: 120px;
 	overflow:auto;
 }
 
 
-.CMxpSummaryTable {width: 100%;}
-table.CMxpSummaryTable tr td {
+.pracManxpSummaryTable {width: 100%;}
+table.pracManxpSummaryTable tr td {
 	font-size: .9em;
 	max-width: 100px;
 }
 
-td.CMxpLabel { text-align: right;}
-td.CMxpData {text-align: center;}
+td.pracManxpLabel { text-align: right;}
+td.pracManxpData {text-align: center;}
 
-table.CMarmor tr.CMheader {background-color: #DDDDDD; }
-table.CMarmor tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
-td.CMCOLarmorName {text-align:left;}
+table.pracManarmor tr.pracManheader {background-color: #DDDDDD; }
+table.pracManarmor tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+td.pracManCOLarmorName {text-align:left;}
 
 
-.CMinlineBlock	{ display: inline-block; vertical-align: text-top;}
-table.CMDefenseSummary tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+.pracManinlineBlock	{ display: inline-block; vertical-align: text-top;}
+table.pracManDefenseSummary tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
 
-table.CMHitZones tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+table.pracManHitZones tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
 
 
 .flagged { background-color: #a64a4a; }
@@ -317,7 +317,7 @@ table.CMHitZones tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; te
 							display: inline-block;
 							vertical-align: text-top;
 							}
-.CMcalculatedStats { display: table; width: 100% }
-.CMcalculatedStatsRow { display: table-row; margin-bottom: 2px; }
-.CMcalculatedStatsRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
-.CMcalculatedStatsRow .CMCOLstatName 			{display:  table-cell; text-align: right; white-space: nowrap;}
+.pracMancalculatedStats { display: table; width: 100% }
+.pracMancalculatedStatsRow { display: table-row; margin-bottom: 2px; }
+.pracMancalculatedStatsRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
+.pracMancalculatedStatsRow .pracManCOLstatName 			{display:  table-cell; text-align: right; white-space: nowrap;}

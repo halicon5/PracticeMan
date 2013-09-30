@@ -1,6 +1,6 @@
 pracMan.pracManagerSVC = function(aManDAT, aDispBoxId) {
 	this.mandat = aManDAT;
-//	this.UI = new pracMan.pracManagerUI (this, aDispBoxId);
+	this.UI = new pracMan.pracManagerUI (this, aDispBoxId);
 	
 	this.callStack = null;
 	

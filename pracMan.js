@@ -7,9 +7,12 @@ var pracMan = {
 	"debug":  true,
 	"traceLog": "",
 	"logCalls": 0,
-	"panelTabsDef": new Array( 		{id: "editSongs", label: "Repertoire"},
-									{id: "editExercises", label: "Excercises"},
+	"panelTabsDef": new Array( 		
 									{id: "editSessions", label:"Practice Sessions"}
+									,{id: "editScales", label: "Scales"}
+									,{id: "editEtudes", label: "Etudes"}
+									,{id: "editExercises", label: "Excercises"}
+									,{id: "editSongs", label: "Repertoire"}
 									),
 	"storageName": "pracMan"
 }; 

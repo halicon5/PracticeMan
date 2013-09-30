@@ -1,5 +1,5 @@
-pracMan.pracManagerUI = function(aCharManagerSVC, dispBox) {
-	this.Manager = aCharManagerSVC;
+pracMan.pracManagerUI = function(aPracManSVC, dispBox) {
+	this.Manager = aPracManSVC;
 	this.dispBox = document.getElementById(dispBox);
 
 	this.elements = {}; // holds references to other UI objects.
@@ -14,30 +14,24 @@ pracMan.pracManagerUI = function(aCharManagerSVC, dispBox) {
 	this.elements.editorPanels = {};
 	this.defineTabsAndPanels("Editor", pracMan.panelTabsDef, pracMan.CSSname + "_TDcontent");
 
-	/*
-	this.subUIs.attributesPanel = new pracMan.panelAttributesUI(this, this.Manager, this.elements.editorPanels["editAttribs"]);
-	this.subUIs.characterPanel = new pracMan.panelCharacterUI(this, this.Manager, this.elements.editorPanels["editChar"]);
-	this.subUIs.skillPanel = new pracMan.panelSkillsUI(this, this.Manager, this.elements.editorPanels["editSkills"]);
-	this.subUIs.masteryPanel = new pracMan.panelMasteriesUI(this, this.Manager, this.elements.editorPanels["editMasteries"]);
-	this.subUIs.magicPanel = new pracMan.panelMagicUI(this, this.Manager, this.elements.editorPanels["editMagic"]);
-	this.subUIs.armorPanel = new pracMan.panelArmorUI(this, this.Manager, this.elements.editorPanels["editArmor"]);
-	this.subUIs.weaponsPanel = new pracMan.panelWeaponsUI(this, this.Manager, this.elements.editorPanels["editWeapons"]);
-	this.subUIs.traitHCsPanel = new pracMan.panelTraitHCsUI(this, this.Manager, this.elements.editorPanels["editTraitHCs"]);
-	*/
+	this.subUIs.sessionsPanel = new pracMan.panelSessionsUI(this, this.Manager, this.elements.editorPanels["editSessions"]);
+	this.subUIs.scalesPanel = new pracMan.panelScalesUI(this, this.Manager, this.elements.editorPanels["editScales"]);
+//	this.subUIs.repertoirePanel = new pracMan.panelRepertoireUI(this, this.Manager, this.elements.editorPanels["editRepertoire"]);
+//	this.subUIs.etudesPanel = new pracMan.panelRepertoireUI(this, this.Manager, this.elements.editorPanels["editEtudes"]);
+//	this.subUIs.exercisesPanel = new pracMan.panelExercisesUI(this, this.Manager, this.elements.editorPanels["editExercises"]);
+//	this.subUIs.scalesPanel = new pracMan.panelScalseUI(this, this.Manager, this.elements.editorPanels["editScales"]);
 
 	this.panelUIs = {};
-	/*
-	this.panelUIs.attributesPanel = this.subUIs.attributesPanel;
-	this.panelUIs.characterPanel = this.subUIs.characterPanel;
-	this.panelUIs.skillPanel = this.subUIs.skillPanel;
-	this.panelUIs.masteryPanel = this.subUIs.masteryPanel;
-	this.panelUIs.magicPanel = this.subUIs.magicPanel;
-	this.panelUIs.armorPanel = this.subUIs.armorPanel;
-	this.panelUIs.weaponsPanel = this.subUIs.weaponsPanel;
-	this.panelUIs.traitHCsPanel = this.subUIs.traitHCsPanel;
-	*/
 
-	this.activePanel = this.subUIs.;
+	this.panelUIs.sessionsPanel = this.subUIs.sessionsPanel;
+	this.panelUIs.scalesPanel = this.subUIs.scalesPanel;
+//	this.panelUIs.repertoirePanel = this.subUIs.repertoirePanel;
+//	this.panelUIs.etudesPanel = this.subUIs.etudesPanel;
+//	this.panelUIs.exercisesPanel = this.subUIs.exercisesPanel;
+//	this.panelUIs.scalesPanel = this.subUIs.scalesPanel;
+
+
+	this.activePanel = this.subUIs.sessionsPanel;
 	this.activePopup = undefined;
 	
 	// not sure if this is useful
@@ -182,7 +176,7 @@ pracMan.pracManagerUI = function(aCharManagerSVC, dispBox) {
 		a.setAttribute("id", pracMan.CSSname + tabId + "TabLink");
 		a.setAttribute("onclick", "pracMan.switchTabs('" + tabSet.id + "', '" 
 													+ pracMan.CSSname + groupName + "PanelSet', '" 
-													+ li.id + "', '" + pracMan.CSSname + tabId +"Panel' ); this.CMUI.updateDisplay();");
+													+ li.id + "', '" + pracMan.CSSname + tabId +"Panel' ); this.JSUI.updateDisplay();");
 		a.innerHTML = label;
 		li.appendChild(a);
 
