@@ -16,7 +16,6 @@ Manager
 		- name
 		- composer
 		- targetBPM
-		- instrument
 		- notes
 	Scales
 		- key
