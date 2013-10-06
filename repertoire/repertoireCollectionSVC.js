@@ -83,14 +83,16 @@ pracMan.repertoireCollectionSVC = function(aRepCollectionDAT, aManagerSVC, requi
 		}
 	}
 	
-	pracMan.repertoireCollectionSVC.prototype.addWriteInSkill = function(skillDef) {
-		if (pracMan.debug) pracMan.log("[CALL] pracMan.repertoireCollectionSVC.prototype.addWriteInSkill = function(skillDef)");
+	pracMan.repertoireCollectionSVC.prototype.addWriteInSong = function(aRepDef) {
+		if (pracMan.debug) pracMan.log("[CALL] pracMan.repertoireCollectionSVC.prototype.addWriteInSong = function(aRepDef)");
 		var errMsg = "";
 		var success = true;
-		if (skillDef.name) {
-			if (this.defs[skillDef.name]) {
+		var safename = (aRepDef.name) ? pracMan.safe_name(aRepDef.name) : null;
+
+		if (safename) {
+			if (this.defs[ safename ] ) {
 				success = false;
-				errMsg = "Default skill definition already exists.\n";
+				errMsg = "Repertoire piece with that name already exists.\n";
 			}
 
 			if (this.d.list[skillDef.name]) {
