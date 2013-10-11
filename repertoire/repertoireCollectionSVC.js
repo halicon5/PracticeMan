@@ -45,16 +45,15 @@ pracMan.repertoireCollectionSVC = function(aRepCollectionDAT, aManagerSVC, requi
 		if (pracMan.debug) pracMan.log("[CALL] pracMan.repertoireCollectionSVC.prototype.addRepertoire = function()");
 
 		if (this.validateRepertoire(aRepDAT) ) {
-			alert("missing code in " + this.jsCLASSNAME);
+			var safename = pracMan.safe_name(aRepDAT.name);
+			this.d.list[safename] = aRepDAT;
+
 		} else {
-			alert("missing code in " + this.jsCLASSNAME);
+			alert("Repertoire not added");
 		}
 	}
 
-	pracMan.repertoireCollectionSVC.prototype.validateRepertoire = function(aRepDAT) {
-		if (pracMan.debug) pracMan.log("[CALL] pracMan.repertoireCollectionSVC.prototype.validateRepertoire = function()");
 
-	}
 
 
 
@@ -96,18 +95,18 @@ pracMan.repertoireCollectionSVC = function(aRepCollectionDAT, aManagerSVC, requi
 			}
 
 			if (this.d.list[skillDef.name]) {
-				if (pracMan.debug) pracMan.log("[ALERT] pracMan.repertoireCollectionSVC.prototype.addWriteInSkill = function(skillDef): Character already possesses the skill " + skillDef.name);
+				if (pracMan.debug) pracMan.log("[ALERT] pracMan.repertoireCollectionSVC.prototype.addWriteInSong = function(skillDef): Repertoire already exists " + aRepDef.name);
 			}
 		} 
 		else {
 			success = false;
-			errMsg += "Skill Definition invalid.\n";
+			errMsg += "Repertoire Definition invalid.\n";
 		}
 		
 		if (success) {
-			if (!this.d.list[skillDef.name]) {
-				this.d.list[skillDef.name] = new this.childDAT(skillDef);
-				this.d.list[skillDef.name].skType = 'w';
+			if (!this.d.list[aRepDef.name]) {
+				this.d.list[aRepDef.name] = new this.childDAT(aRepDef);
+				this.d.list[aRepDef.name].skType = 'w';
 			}
 			this.list[skillDef.name] = new this.childSVC(this.d.list[skillDef.name], this.parChar);
 			this.parChar.d.writeInSkillHash[skillDef.name] = 1;

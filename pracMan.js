@@ -40,6 +40,7 @@ var pracMan = {
 	
 
 	pracMan.safe_name = function(str) {
+		str = trim(str);
 		if (typeof str === "string") {
 			return str.replace(/[\/, -\.\'\":]/g, "_");
 		} else {
